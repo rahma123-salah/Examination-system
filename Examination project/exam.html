@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styleExam.css" />
+  <title>Exam</title>
+</head>
+
+<body>
+  <div class="home-box custom-box">
+    <div>
+        <div class="header">
+          <h3>Instractions:</h3>
+        </div>
+
+        <div >
+          <p>Total Questation is :- <span class="total-question"></span></p>
+        </div>
+
+        <button type="button" class="btn" onclick="start()">start exam</button>
+      
+        <div ><img style="border-radius: 4px;" src="rr.jpeg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="exam-box custom-box hide">
+    <div id="head">
+      <div class="question-number"></div>
+      <div id="pinMark">
+        <i class="fas fa-thumbtack"></i>
+      </div>
+    </div>
+    <div class="question-text"></div>
+    <div class="option-container">
+      <!-- <div class="option">Creative Style Sheets</div>
+            <div class="option">Colorful Style Sheets</div>
+            <div class="option">Cascading Style Sheets</div>
+            <div class="option">Computer Style Sheets</div> -->
+    </div>
+    <div class="next-question-btn">
+      <button type="button" class="btn" onclick="next()" id="next">
+        Next
+      </button>
+    </div>
+    <div class="prev-question-btn">
+      <button type="button" class="btn" id="previous">
+        previous
+      </button>
+    </div>
+    <div id="countDown">
+      <p></p>
+    </div>
+    <div style="width: 50px; display: inline">
+      <img style="width: 60px; margin: -6px; border-radius: 50%;" src="giphy.gif" alt="" />
+    </div>
+    <div class="pin"></div>
+  </div>
+
+  <div class="result-box custom-box hide">
+    <h1>Exam results</h1>
+    <table>
+      <tr>
+        <td>Total question</td>
+        <td><span class="total-question"></span></td>
+      </tr>
+
+      <tr>
+        <td>Correct</td>
+        <td><span class="total-correct"></span></td>
+      </tr>
+      <tr>
+        <td>Wrong</td>
+        <td><span class="total-wrong"></span></td>
+      </tr>
+      <tr>
+        <td>percentage</td>
+        <td><span class="percentage"></span></td>
+      </tr>
+      <tr>
+        <td>Your total score</td>
+        <td><span class="total-score"></span></td>
+      </tr>
+    </table>
+    <button type="button" class="btn" onclick="tryagain()">Try again</button>
+  </div>
+
+  <script src="script 3.js"></script>
+</body>
+
+</html>

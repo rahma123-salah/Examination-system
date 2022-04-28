@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff7fe;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    overflow: hidden;
+    border-radius: 23px;
+    box-shadow:  0 10px 30px rgba(0,0,0,0.3);
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    background: rgba(187, 159, 184, 0.5);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    display: flex;
+}
+.header{
+    border-bottom: 0px solid ;
+    padding: 18px 40px;
+    border-radius: 5px;
+    margin-top: -30px;
+    text-align: center;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+    width: 515px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-control{
+    margin-bottom: 4px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+.form-control input{
+border: #2b162a 2px solid;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px;
+    font-family: inherit;
+}
+.form-control.sucsses input{
+    border-color: rgb(2, 204, 2);
+}
+.form-control.error input{
+    border-color: rgb(192, 0, 0);
+}
+
+.form-control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control.sucsses i.fa-check-circle{
+    color: rgb(2, 204, 2);
+visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color:  rgb(192, 0, 0);
+visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    color:rgb(192, 0, 0);
+    visibility: visible;
+}
+.form button{
+    background-color: #2b162a;
+    border: 0px solid;
+    color:   #fde0e8;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color:  #443539;
+    color: #e9a4e5;
+
+}
